@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="advanced.css">
+    </head>
+    <body>
+        <div class='header flexbox flex-header'>
+            <img class="header-logo" src='images/search_logo.png' alt='Google logo'>
+            <a href="index.html">Google Search</a>
+        </div>
+        <div class="title">
+            Advanced Search
+        </div>
+        <form action="https://google.com/search">
+            <div class="sub-title">
+                Find pages with...
+            </div>
+            <div class="flexbox">
+                <div class="label">
+                    <label for="as_q">all these words:</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="as_q">
+                </div>
+            </div>
+            <div class="flexbox">
+                <div class="label">
+                    <label for="as_epq">this exact word or phrase:</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="as_epq">
+                </div>
+            </div>
+            <div class="flexbox">
+                <div class="label">
+                    <label for="as_oq">any of these words:</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="as_oq">
+                </div>
+            </div>
+            <div class="flexbox">
+                <div class="label">
+                    <label for="as_eq">none of these words:</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="as_eq">
+                </div>
+            </div>
+            <div class="flexbox right-align">
+                <div>
+                    <input type="submit" value="Advanced Search">
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
