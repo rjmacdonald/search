@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-emphasis: none;
+}
+
+a:link, a:visited {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #444444;
+    text-decoration: underline;
+}
+
+input {
+    outline: none;
+    margin-top: 80px;
+    border-radius: 30px;
+    border: 1px solid lightgray;
+    width: 510px;
+    height: 40px;
+    padding-left: 40px;
+    background-image: url(images/search_icon.png);
+    background-color: white;
+    background-position: 15px 13px;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+}
+
+button {
+    width: 130px;
+    height: 35px;
+    margin: 5px;
+    margin-top: 30px;
+    font-size: 15px;
+    background-color: #f3f3f3;
+    color: #666666;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    border: solid 1px lightgray;
+    color: black;
+    background-color: #fafafa;
+}
+
+.container {
+    position: relative;
+}
+
+.header {
+    padding: 10px;
+    text-align: right;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 280px;
+    height: 90px;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.logo-text {
+    width: auto;
+    text-align: center;
+    position: relative;
+    bottom: 35px;
+    left: 110px;
+    /*top: 175px;
+    right: 42.5%;*/
+    color: rgb(66, 133, 244);
+    font-size: medium;
+}
