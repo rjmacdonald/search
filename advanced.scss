@@ -17,16 +17,15 @@ body {
 }
 
 form {
-    margin: 45px;
+    margin: 45px 0 45px 45px;
     padding-bottom: 20px;
-    width: 75%;
     border-bottom: 1px solid lightgray;
 }
 
 input[type=text] {
     border: 1px solid lightgray;
     outline: none;
-    width: 100%;
+    width: 98%;
     height: 25px;
     margin-top: 15px;
 }
@@ -53,26 +52,88 @@ input:focus {
     border-color: #4d90fe;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+@media screen and (max-width: 1204px) {
+    form {
+        width: 95%;
+    }
+    
+    .input {
+        width: 55%;
+    }
+
+    .helper {
+        width: 35%;
+    }
+
+    .right-align {
+        width: calc(25px + 64%);
+    }
+
+    .sub-title {
+        padding-right: 56%;
+    }
 }
 
-.flexbox {
+@media screen and (min-width: 1205px) {
+    form {
+        width: 1160px;
+    }
+    
+    .input {
+        width: 575px;
+    }
+
+    .helper {
+        width: 400px;
+    }
+
+    .right-align {
+        width: 760px;
+    }
+
+    .sub-title {
+        padding-right: 635px;
+    }
+}
+
+@media screen and (max-width: 1059px) {
+    p, .helper, .helper-title, .helper>div {
+        display: none;
+        width: 0;
+    }
+
+    .input {
+        width: 48%;
+    }
+
+    .right-align {
+        width: calc(200px + 46%);
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    p {
+        margin: 0px 3px;
+        font-size: 11px;
+        font-family: monospace;
+    }
+}
+
+%flexbox {
     display: flex;
     align-items: center;
 }
 
+.flexbox {
+    @extend %flexbox;
+}
+
 .flex-header {
     justify-content: space-between;
+}
+
+.flex-stretch {
+    align-items: stretch;
 }
 
 .header {
@@ -86,13 +147,28 @@ select:-webkit-autofill:focus {
     margin: 3px;
 }
 
+.helper {
+    @extend %flexbox;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-top: 15px;
+    font-size: smaller;
+    color: rgb(94, 94, 94);
+}
+
+.helper-title {
+    font-weight: bold;
+    color: gray;
+}
+
 .input {
-    width: 80%;
+    margin: 0px 10px;
 }
 
 .label {
-    width: 20%;
+    width: 175px;
     margin-top: 15px;
+    margin-right: 5px;
 }
 
 .right-align {

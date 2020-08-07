@@ -13,39 +13,60 @@
             Advanced Search
         </div>
         <form action="https://google.com/search">
-            <div class="sub-title">
-                Find pages with...
-            </div>
             <div class="flexbox">
-                <div class="label">
-                    <label for="as_q">all these words:</label>
+                <div class="sub-title">
+                    Find pages with...
                 </div>
-                <div class="input">
-                    <input type="text" name="as_q">
+                <div class="helper-title">
+                    To do this in the search box.
                 </div>
             </div>
             <div class="flexbox">
-                <div class="label">
-                    <label for="as_epq">this exact word or phrase:</label>
-                </div>
-                <div class="input">
-                    <input type="text" name="as_epq">
-                </div>
-            </div>
-            <div class="flexbox">
-                <div class="label">
-                    <label for="as_oq">any of these words:</label>
-                </div>
-                <div class="input">
-                    <input type="text" name="as_oq">
-                </div>
-            </div>
-            <div class="flexbox">
-                <div class="label">
-                    <label for="as_eq">none of these words:</label>
-                </div>
-                <div class="input">
-                    <input type="text" name="as_eq">
+                <div style="flex-grow: 2;">
+                    <div class="flexbox">
+                        <div class="label">
+                            <label for="as_q">all these words:</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="as_q">
+                        </div>
+                        <div class="helper">
+                            <div>Type the important words:</div> <p> tri-colour rat terrier</p>
+                        </div>
+                    </div>
+                    <div class="flexbox">
+                        <div class="label">
+                            <label for="as_epq">this exact word or phrase:</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="as_epq">
+                        </div>
+                        <div class="helper">
+                            <div>Put exact words in quotes:</div> <p> "rat terrier" </p>
+                        </div>
+                    </div>
+                    <div class="flexbox">
+                        <div class="label">
+                            <label for="as_oq">any of these words:</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="as_oq">
+                        </div>
+                        <div class="helper">
+                            <div>Type </div><p> OR </p> <div>between all the words you want:</div> <p> miniature OR standard </p>
+                        </div>
+                    </div>
+                    <div class="flexbox">
+                        <div class="label">
+                            <label for="as_eq">none of these words:</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="as_eq">
+                        </div>
+                        <div class="helper">
+                            <div>Put a minus sign just before words that you don't want:</div> <p> -rodent, -"jack russell" </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="flexbox right-align">
